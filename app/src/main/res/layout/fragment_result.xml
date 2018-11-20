@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="locale"
+    android:minHeight="@dimen/_400sdp"
+    android:orientation="vertical"
+    tools:context=".fragments.ResultFragment">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_22sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layoutDirection="locale">
+
+        <ImageView
+            android:id="@+id/Icon"
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:transitionName="Icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_android_black_24dp" />
+
+        <TextView
+            android:id="@+id/chooseTypeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/type"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/_16sdp"
+            android:transitionName="TypeText"
+            app:layout_constraintStart_toEndOf="@id/Icon"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:drawablePadding="@dimen/_5sdp"
+            android:text=""
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/_15sdp"
+            android:transitionName="type"
+            app:layout_constraintStart_toEndOf="@id/chooseTypeText"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/firstInputIcon"
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:transitionName="firstInputIcon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/chooseTypeText"
+            app:srcCompat="@drawable/ic_android_black_24dp" />
+
+        <TextView
+            android:id="@+id/firstInputText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:text="@string/current_input"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/_15sdp"
+            android:transitionName="firstInputText"
+            app:layout_constraintStart_toEndOf="@id/firstInputIcon"
+            app:layout_constraintTop_toBottomOf="@id/chooseTypeText" />
+
+
+        <TextView
+            android:id="@+id/firstInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:text=""
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/_15sdp"
+            android:transitionName="firstInput"
+            app:layout_constraintStart_toEndOf="@id/firstInputText"
+            app:layout_constraintTop_toBottomOf="@id/chooseTypeText" />
+
+        <ImageView
+            android:id="@+id/secondInputIcon"
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:transitionName="secondInputIcon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/firstInputText"
+            app:srcCompat="@drawable/ic_android_black_24dp" />
+
+        <TextView
+            android:id="@+id/secondInputText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:text="@string/second_current_input"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/_15sdp"
+            android:transitionName="secondInputText"
+            app:layout_constraintStart_toEndOf="@id/secondInputIcon"
+            app:layout_constraintTop_toBottomOf="@id/firstInputText" />
+
+        <TextView
+            android:id="@+id/secondInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:text=""
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/_14sdp"
+            android:transitionName="secondInput"
+            app:layout_constraintStart_toEndOf="@id/secondInputText"
+            app:layout_constraintTop_toBottomOf="@id/firstInputText" />
+
+
+        <View
+            android:id="@+id/result_box"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_130sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:background="@drawable/box_bg"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/secondInput" />
+
+        <ImageView
+            android:id="@+id/sugar_arrow"
+            android:layout_width="@dimen/_67sdp"
+            android:layout_height="@dimen/_110sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_75sdp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/secondInput"
+            app:srcCompat="@drawable/ic_android_black_24dp" />
+
+
+        <TextView
+            android:id="@+id/newDoseText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center_horizontal"
+            android:text="@string/after_calculated"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_14sdp"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="@id/result_box" />
+
+        <TextView
+            android:id="@+id/units"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_12sdp"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_40sdp"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/newDoseText" />
+
+        <TextView
+            android:id="@+id/doseType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_12sdp"
+            android:gravity="center_horizontal"
+            android:text="@string/second_type"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_14sdp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/result_box" />
+
+
+        <TextView
+            android:id="@+id/resultDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_49sdp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/_12sdp"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/doseType" />
+
+
+        <Button
+            android:id="@+id/recalculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginTop="@dimen/_26sdp"
+            android:background="@drawable/but_bg"
+            android:backgroundTint="@android:color/black"
+            android:drawableStart="@drawable/ic_android_black_24dp"
+            android:drawablePadding="@dimen/_4sdp"
+            android:elevation="@dimen/_5sdp"
+            android:padding="@dimen/_12sdp"
+            android:text="@string/calculate_again"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_11sdp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/resultDescription" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_gravity="bottom|center" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Fully Animated App Tutorial</string>
+    <string name="units">Units</string>
+    <string name="first_type">First Type</string>
+    <string name="second_type">Second Type</string>
+    <string name="third_type">Third Type</string>
+    <string name="current_input">Current Input</string>
+    <string name="second_current_input">Current second input</string>
+    <string name="between">between</string>
+    <string name="should">should be</string>
+    <string name="and">and</string>
+    <string name="second_input">Second Input</string>
+    <string name="first_input">First Input</string>
+    <string name="some_text_about_app">This is some text about app</string>
+    <string name="choose_type">Choose Type</string>
+    <string name="language">عربي</string>
+    <string name="type">Type</string>
+    <string name="after_calculated">After Calculated</string>
+    <string name="calculate_again">Calculate Again</string>
+    <string name="enter_fires_input">Enter first input</string>
+    <string name="enter_correct_value">Enter correct Value</string>
+    <string name="enter_second_input">Enter second input</string>
+    <string name="enter">Enter</string>
+</resources>

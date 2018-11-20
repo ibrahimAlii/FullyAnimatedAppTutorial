@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainScroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="locale"
+    tools:context=".fragments.InputDetailsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layoutDirection="locale"
+        android:orientation="vertical">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="locale">
+
+            <ImageView
+                android:id="@+id/Icon"
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:transitionName="Icon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_android_black_24dp" />
+
+            <TextView
+                android:id="@+id/chooseTypeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:text="@string/choose_type"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold"
+                android:transitionName="TypeText"
+                app:layout_constraintStart_toEndOf="@id/Icon"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layoutDirection="locale"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5sdp"
+            android:weightSum="3">
+
+
+            <Button
+                android:id="@+id/secondType"
+                style="@style/ButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_6sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:text="@string/second_type"
+                android:textSize="@dimen/_10sdp"
+                android:transitionName="secondType" />
+
+
+            <Button
+                android:id="@+id/firstType"
+                style="@style/ButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_6sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:text="@string/first_type"
+                android:textSize="@dimen/_10sdp"
+                android:transitionName="firstType" />
+
+
+            <Button
+                android:id="@+id/thirdType"
+                style="@style/ButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_6sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:text="@string/third_type"
+                android:textSize="@dimen/_10sdp"
+                android:transitionName="thirdType" />
+
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="50dp" />
+        </LinearLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="locale">
+
+            <ImageView
+                android:id="@+id/firstInputIcon"
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:transitionName="firstInputIcon"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_android_black_24dp" />
+
+            <TextView
+                android:id="@+id/firstInputText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_22sdp"
+                android:text="@string/enter_fires_input"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold"
+                android:transitionName="firstInputText"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@id/firstInputIcon" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <!--<android.support.design.widget.TextInputLayout-->
+        <!--android:id="@+id/doseInputLayout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:errorEnabled="true"-->
+        <!--&gt;-->
+        <!--</android.support.design.widget.TextInputLayout>-->
+        <EditText
+            android:id="@+id/firstInput"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/et_bg"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="6"
+            android:transitionName="firstInput"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/firstInputError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:gravity="start"
+            android:text="@string/enter_correct_value"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/_10sdp"
+            android:visibility="gone" />
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="locale">
+
+            <ImageView
+                android:id="@+id/secondInputIcon"
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:transitionName="secondInputIcon"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_android_black_24dp" />
+
+            <TextView
+                android:id="@+id/secondInputText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="@string/enter_second_input"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold"
+                android:transitionName="secondInputText"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@id/secondInputIcon"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+        <!--<android.support.design.widget.TextInputLayout-->
+        <!--android:id="@+id/sugarLevelInputLayout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="@dimen/_20sdp">-->
+        <!--</android.support.design.widget.TextInputLayout>-->
+        <EditText
+            android:id="@+id/secondInput"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/et_bg"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="6"
+            android:transitionName="secondInput"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/secondInputError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:gravity="start"
+            android:text="@string/enter_correct_value"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/_10sdp"
+            android:visibility="gone" />
+
+
+        <Button
+            android:id="@+id/enter"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_25sdp"
+            android:background="@drawable/but_bg_black"
+            android:drawableStart="@drawable/ic_android_black_24dp"
+            android:enabled="false"
+            android:gravity="center"
+            android:paddingStart="@dimen/_15sdp"
+            android:paddingEnd="@dimen/_15sdp"
+            android:text="@string/enter"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_10sdp" />
+
+    </LinearLayout>
+
+</ScrollView>

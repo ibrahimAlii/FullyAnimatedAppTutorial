@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Fully Animated App Tutorial</string>
+    <string name="units">وحدة</string>
+    <string name="first_type">النوع الأول</string>
+    <string name="second_type">النوع الثاني</string>
+    <string name="third_type">النوع الثالث</string>
+    <string name="current_input">المدخل الحالي</string>
+    <string name="second_current_input">المدخل الثاني الحالي</string>
+    <string name="between">بين</string>
+    <string name="should">يجب أن يكون </string>
+    <string name="and">و</string>
+    <string name="second_input">المدخل الثاني</string>
+    <string name="some_text_about_app">لا تحقرن صغيرةً إن الجبال من الحصى</string>
+    <string name="choose_type">اختر النوع</string>
+    <string name="language">عربي</string>
+    <string name="type">النوع</string>
+    <string name="after_calculated">بعد الحساب</string>
+    <string name="calculate_again">إعادة حساب</string>
+    <string name="enter_fires_input">أدخل القيمة الأولى</string>
+    <string name="enter_correct_value">أدخل القيم صحيحة</string>
+    <string name="enter_second_input">أدخل القيمة الثانية</string>
+    <string name="first_input">المدخل الأول</string>
+    <string name="enter">تأكيد</string>
+</resources>
